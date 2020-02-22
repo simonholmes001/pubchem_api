@@ -9,7 +9,6 @@ from click.testing import CliRunner
 from pubchem_api import pubchem_api
 from pubchem_api import cli
 
-
 class TestPubchem_api(unittest.TestCase):
     """Tests for `pubchem_api` package."""
 
@@ -18,6 +17,10 @@ class TestPubchem_api(unittest.TestCase):
 
     def tearDown(self):
         """Tear down test fixtures, if any."""
+
+    def test_001_something(self):
+        """Test something."""
+        """Test something."""
 
     def test_000_something(self):
         """Test something."""
