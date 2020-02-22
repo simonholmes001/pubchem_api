@@ -50,4 +50,5 @@ setup(
     url='https://github.com/simonholmes001/pubchem_api',
     version='0.1.0',
     zip_safe=False,
+    extensions = ['sphinx.ext.autosectionlabel'],
 )
