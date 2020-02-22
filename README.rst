@@ -16,11 +16,10 @@ pubchem_api
 
 
 
-A simple API call to tehe pubchem 
+A simple API call to the pubchem database
 
 
 * Free software: MIT license
-* Documentation: https://pubchem-api.readthedocs.io.
 
 
 Features
