@@ -13,7 +13,7 @@ class api_get_features:
         self.output_format = output_format
 
         request_api_data = requests.get(self.base+self.input_1+self.i+self.input_2+self.j+self.output_format)
-        print("The HTTP status code for this request is: {}. Well done Holmes, you've outdone yourself yet again!!!".format(request_api_data.status_code))
+        print("The HTTP status code for this request is: {}.".format(request_api_data.status_code))
 
         with open("./data/amino_acid_features.csv", "wb") as f:
             f.write(request_api_data.content)
