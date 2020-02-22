@@ -25,7 +25,7 @@ A simple API call to the pubchem database
 Features
 --------
 
-* TODO
+* Please see 'this file <https://github.com/simonholmes001/pubchem_api/blob/master/README.md>'
 
 Credits
 -------
