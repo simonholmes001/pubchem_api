@@ -7,7 +7,7 @@ pubchem_api
         :target: https://pypi.python.org/pypi/pubchem_api
 
 .. image:: https://img.shields.io/travis/simonholmes001/pubchem_api.svg
-        :target: https://travis-ci.com/simonholmes001/pubchem_api.svg?branch=master
+        :target: https://travis-ci.com/simonholmes001/pubchem_api
 
 .. image:: https://readthedocs.org/projects/pubchem-api/badge/?version=latest
         :target: https://pubchem-api.readthedocs.io/en/latest/?badge=latest
