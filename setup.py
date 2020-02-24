@@ -31,7 +31,7 @@ setup(
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
     ],
-    description="A simple API call to tehe pubchem ",
+    description="A simple API call to the pubchem database",
     entry_points={
         'console_scripts': [
             'pubchem_api=pubchem_api.cli:main',
@@ -48,7 +48,7 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/simonholmes001/pubchem_api',
-    version='0.1.0',
+    version='0.1.2',
     zip_safe=False,
     extensions = ['sphinx.ext.autosectionlabel'],
 )
