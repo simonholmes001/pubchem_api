@@ -12,7 +12,6 @@ from pubchem_api import pubchem_api
 from pubchem_api import cli
 
 from unittest import mock
-from mock import patch
 
 class TestPubchem_api(unittest.TestCase):
     """Tests for `pubchem_api` package."""
