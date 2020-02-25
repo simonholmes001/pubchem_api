@@ -19,7 +19,7 @@ In this script, the PubChem REST API has been broken into six parts:
 .. _https://pubchem.ncbi.nlm.nih.gov/rest/pug/: https://pubchem.ncbi.nlm.nih.gov/rest/pug/
 .. _README.md: https://github.com/simonholmes001/pubchem_api/blob/master/README.md
 
-Where as the base_url cannot change, the remaining five parameters can be changed in function to what
+Whereas the base_url cannot change, the remaining five parameters can be changed in function to what
 one is searching for.
 
 A final parameter, output_file_name, sets the file name for saving the data.
