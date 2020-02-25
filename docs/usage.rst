@@ -14,7 +14,7 @@ In this script, the PubChem REST API has been broken into six parts:
 - the search_id: the compound cid of the molecule(s) to be retrieved from PubChem
 - the property: indicates to PubChem that a physical-chemical property will be requested
 - the output_property: identifier for PubChem for the chemical property to be retrieved
-- the output_format: identifier for PubChem to return the data in a given format (see `README.md`_)
+- the output_format: identifier for PubChem to return the data in a given format (see `README.md`_ )
 
 .. _https://pubchem.ncbi.nlm.nih.gov/rest/pug/: https://pubchem.ncbi.nlm.nih.gov/rest/pug/
 .. _https://github.com/simonholmes001/pubchem_api/blob/master/README.md
