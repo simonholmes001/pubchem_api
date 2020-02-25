@@ -4,7 +4,7 @@ base_url: the base url of the PubChem REST API call
 compound_cid_selector: instructions to pubchem to run the call based on the compounds unique
 compound identifier (cid)
 search_id: the compound cid of the molecule(s) to be retrieved from PubChem
-property: idicates to PubChem that a physical-chemical property will be requested
+property: indicates to PubChem that a physical-chemical property will be requested
 output_property: identifier for PubChem for the chemical property to be retrieved
 output_format: identifier for PubChem to return the data in a given format (see README.md)
 output_file_name: name used for output file
