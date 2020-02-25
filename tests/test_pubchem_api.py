@@ -2,12 +2,16 @@
 
 """Tests for `pubchem_api` package."""
 
+import os
 
 import unittest
 from click.testing import CliRunner
 
 from pubchem_api import pubchem_api
 from pubchem_api import cli
+
+from unittest import mock
+from mock import patch
 
 class TestPubchem_api(unittest.TestCase):
     """Tests for `pubchem_api` package."""
@@ -18,11 +22,45 @@ class TestPubchem_api(unittest.TestCase):
     def tearDown(self):
         """Tear down test fixtures, if any."""
 
-    def test_001_something(self):
-        """Test something."""
-        """Test something."""
+    def test_001_API_call_ok(self):
+        """
+        Test that simple API call returns a 200 status code.
+        Test that the concatenation of the base_url+compound_cid_selector+search_id+
+        property+output_property+output_format gives a URL REST API call that can
+        be performed succesfully.
+        If true, pubchem_api.ApiGetFeatures generates a text file containing the HTML
+        response code (200 if successful).
+        Assert command validates this.
+        By products of the test (.txt file & .csv file) are deleted after the test has ran.
+        base_url: the base url of the PubChem REST API call
+        compound_cid_selector: instructions to pubchem to run the call based on the compounds unique
+        compound identifier (cid)
+        search_id: the compound cid of the molecule(s) to be retrieved from PubChem
+        property: indicates to PubChem that a physical-chemical property will be requested
+        output_property: identifier for PubChem for the chemical property to be retrieved
+        output_format: identifier for PubChem to return the data in a given format (see README.md)
+        output_file_name: name used for output file
+        """
+        base_url = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/"
+        compound_cid_selector = "compound/cid/"
+        search_id = "6322/"
+        property = "property/"
+        output_property = "MolecularWeight/"
+        output_format = "CSV"
+        output_file_name = "test_data"
 
-    def test_000_something(self):
+        pubchem_api.ApiGetFeatures(base_url, compound_cid_selector, search_id, property, output_property, output_format, output_file_name)
+
+        with open(output_file_name+".txt", "r") as f:
+            contents = f.read()
+            assert(contents == "status code is 200.")
+
+        os.remove(output_file_name+".txt")
+        os.remove(output_file_name+".csv")
+
+
+
+    def test_002_mock_is_ok(self):
         """Test something."""
 
     def test_command_line_interface(self):
