@@ -14,7 +14,7 @@ pubchem_api
         :alt: Documentation Status
 
 
-A simple API call to the pubchem database
+A simple API call to the pubchem database (UNOFFICIAL AND NOT FROM PUBCHEM)
 
 * Documentation: https://pubchem-api.readthedocs.io/en/latest/
 * Free software: MIT license
