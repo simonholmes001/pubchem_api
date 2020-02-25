@@ -19,7 +19,7 @@ deploy:
   distributions: sdist bdist_wheel
   user: simonholmes001
   password:
-    secure: !ymSXC3m7?*FS4m
+    secure: PLEASE CHANGE ME
   on:
     tags: true
     repo: simonholmes001/pubchem_api
